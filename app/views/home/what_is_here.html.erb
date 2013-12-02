@@ -1,2 +1,43 @@
-<h1>Home#what_is_here</h1>
-<p>Find me in app/views/home/what_is_here.html.erb</p>
+<p><h1>What is here?</h1>
+
+
+
+
+<p>
+  
+    You can find here links to information on a range of characteristic species
+    that are found in Mole Valley.
+  Birds 
+  Bats
+
+  Butterflies 
+    About 60 different kinds of butterfly occur in Britain. More than half of them can be
+    seen in Mole Valley, including several nationally scarce butterflies of chalk
+    grassland and woodland. The high number of species found locally reflects the location of Mole
+    Valley in the warm south east corner of England, and the variety of habitats.
+    Fewer species can survive in the north of Britain, although some are moving
+    northwards as a result of climate change.
+
+
+  Dragonflies and Damselflies
+
+  Fungi 
+
+  Moths
+
+  Plants 
+
+  <p> <%= image_tag("birds/Mute Swan and Cygnets.jpg", :width=>"190",:height=>"190")%>
+    <%= image_tag("plants/common_spotted_orchid.jpg", :width=>"190",:height=>"190")%>
+    <%= image_tag("fungi/Bole_edul002.jpg", :width=>"190",:height=>"190")%>
+    <%= image_tag("butterflies/White_Admiral.jpg", :width=>"190",:height=>"190")%>
+
+ <p>
+ 	<%=link_to "Birds", what_is_here_birds_path%>
+ 
+ 	<%=link_to "Plants", what_is_here_plants_path%>
+ 
+ 	<%=link_to "Fungi", what_is_here_fungi_path%>
+ 
+ 	<%=link_to "Butterflies", what_is_here_butterflies_path%>
+ <p>

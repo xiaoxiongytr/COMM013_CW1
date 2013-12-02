@@ -7,7 +7,10 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	
+<div class="blocktext">
 <div id="user_field">
+<div class="cpojer-links">
 <%if user_signed_in? %>
 					Signed in as <%=current_user.email%>:
 					<%= link_to "Sign Out", destroy_user_session_path, :method => :delete%>
@@ -15,10 +18,17 @@
 					<%= link_to "Sign Up", new_user_registration_path%> or <%= link_to "Sign in", new_user_session_path%>
 			<%end%>
 </div>
+</div>
+
 <p class="notice"><%= notice %></p>
 <p class="alert"><%= alert %></p>
+<div class='border'>
 <%= render 'layouts/nav'%>
+<font color="#000000" align="left">
 <%= yield %>
+</font>
+</div>
+</div>
 
 </body>
 </html>

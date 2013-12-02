@@ -1,5 +1,13 @@
 MoleComm013::Application.routes.draw do
 
+  get "what_is_here/birds"
+
+  get "what_is_here/fungi"
+
+  get "what_is_here/butterflies"
+
+  get "what_is_here/plants"
+
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 
